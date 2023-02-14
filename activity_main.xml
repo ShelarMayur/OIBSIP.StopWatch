@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal_200"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="280dp"
+       android:src="@drawable/stopwatch"
+       android:layout_margin="20dp"
+       android:contentDescription="TODO" />
+   <TextView
+       android:id="@+id/timerTextView"
+       android:layout_width="match_parent"
+       android:textAlignment="center"
+       android:layout_height="wrap_content"
+       android:textColor="@color/black"
+       android:layout_margin="20dp"
+       android:textSize="45sp"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_margin="20dp"
+       android:gravity="center"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/start"
+          android:backgroundTint="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="START"/>
+      <Button
+          android:id="@+id/stop"
+          android:backgroundTint="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="STOP"/>
+      <Button
+          android:id="@+id/pause"
+          android:backgroundTint="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="PAUSE"/>
+   </LinearLayout>
+      <ScrollView
+          android:layout_margin="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/afterPause"
+          android:textSize="25sp"
+          android:layout_width="match_parent"
+          android:textColor="@color/black"
+          android:textAlignment="center"
+          android:layout_height="match_parent"/>
+      </ScrollView>
+
+</LinearLayout>
